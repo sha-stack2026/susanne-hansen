@@ -52,7 +52,19 @@
       box-shadow: 0 18px 50px rgba(30, 39, 51, 0.08);
     }
     header, main, footer { padding-left: clamp(1.4rem, 5vw, 4.2rem); padding-right: clamp(1.4rem, 5vw, 4.2rem); }
-    header { padding-top: 3.2rem; }
+    .banner {
+      margin: 0;
+      padding: 1.15rem clamp(1.4rem, 5vw, 4.2rem);
+      background: #F3EFE6;
+      border-bottom: 1px solid var(--rule);
+      color: var(--ink);
+      font-family: Lora, Georgia, serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 1.12rem;
+      line-height: 1.55;
+    }
+    header { padding-top: 2.2rem; }
     .kicker {
       margin: 0;
       font-size: 0.78rem;
@@ -205,6 +217,9 @@
     .downloads { margin: 0.4rem 0 0; }
     .downloads a { margin-right: 1.2rem; }
     @media (max-width: 640px) {
+      .sheet { width: calc(100% - 1rem); }
+      h1 { font-size: 2.15rem; }
+      .banner { font-size: 1.02rem; }
       .role-head { flex-direction: column; gap: 0.15rem; }
       .dates { text-align: left; }
       body { font-size: 16px; }
@@ -219,6 +234,7 @@
 <body>
   <a class="skip" href="#letter">Skip to the letter</a>
   <article class="sheet">
+    <p class="banner">I keep a minimal digital footprint on platforms where I am the product, including LinkedIn and Meta. I gatekeep who can access my personal information. This website is that invitation.</p>
     <header>
       <p class="kicker">Senior Executive Assistant</p>
       <h1>Susanne Hansen</h1>
