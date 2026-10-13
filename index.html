@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Susanne Hansen · Senior Executive Assistant</title>
+  <meta name="description" content="Senior executive assistant in Carrollton, Texas. High-volume calendars, travel planned around risk and security, and the structure an executive office runs on.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='2' fill='%232C5F66'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='Georgia,serif' font-size='13' fill='%23F4F1EA'%3ESH%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #E8E2D6;
+      --sheet: #FBF9F5;
+      --ink: #1E2733;
+      --body: #2E3A46;
+      --muted: #5D6B78;
+      --accent: #2C5F66;
+      --rule: #C9D3D6;
+      --letter: #FFFCF7;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(1200px 500px at 10% -10%, rgba(44, 95, 102, 0.08), transparent 50%),
+        var(--paper);
+      color: var(--body);
+      font-family: Poppins, "Segoe UI", sans-serif;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+    a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+    a:hover { color: var(--ink); }
+    .skip {
+      position: absolute;
+      left: 1rem;
+      top: -4rem;
+      background: var(--ink);
+      color: var(--sheet);
+      padding: 0.5rem 0.8rem;
+    }
+    .skip:focus { top: 1rem; }
+    .sheet {
+      width: min(920px, calc(100% - 2rem));
+      margin: 1.75rem auto 3rem;
+      background: var(--sheet);
+      border-top: 4px solid var(--accent);
+      box-shadow: 0 18px 50px rgba(30, 39, 51, 0.08);
+    }
+    header, main, footer { padding-left: clamp(1.4rem, 5vw, 4.2rem); padding-right: clamp(1.4rem, 5vw, 4.2rem); }
+    header { padding-top: 3.2rem; }
+    .kicker {
+      margin: 0;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    h1 {
+      margin: 0.35rem 0 0;
+      font-family: Lora, Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(2.7rem, 6vw, 4.1rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+    .place {
+      margin: 0.85rem 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 400;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.35rem;
+      margin-top: 1.7rem;
+      padding-bottom: 1.35rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    nav a {
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    nav a:hover { color: var(--accent); }
+    main { padding-top: 2.2rem; padding-bottom: 1rem; }
+    .summary {
+      max-width: 42rem;
+      margin: 0;
+      font-size: 1.08rem;
+      line-height: 1.7;
+      color: var(--ink);
+    }
+    section { margin-top: 3.4rem; }
+    h2 {
+      margin: 0 0 1.15rem;
+      padding-bottom: 0.45rem;
+      border-bottom: 1px solid var(--rule);
+      font-family: Lora, Georgia, serif;
+      font-weight: 600;
+      font-size: 1.35rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .letter {
+      background: var(--letter);
+      border: 1px solid #E4DDD0;
+      padding: clamp(1.3rem, 3vw, 2.4rem) clamp(1.2rem, 3vw, 2.6rem) 2rem;
+    }
+    .letter p { margin: 0 0 1.05rem; max-width: 40rem; }
+    .salute {
+      font-family: Lora, Georgia, serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 1.25rem;
+      color: var(--ink);
+    }
+    .close { margin-bottom: 0.2rem; }
+    .sign {
+      margin: 0.15rem 0 0;
+      font-family: Lora, Georgia, serif;
+      font-weight: 600;
+      font-size: 1.35rem;
+      color: var(--ink);
+    }
+    .role { margin: 0 0 2rem; }
+    .role-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem 2rem;
+      align-items: baseline;
+    }
+    .role h3 {
+      margin: 0;
+      font-family: Poppins, sans-serif;
+      font-weight: 500;
+      font-size: 1.05rem;
+      line-height: 1.35;
+      color: var(--ink);
+    }
+    .orgline {
+      margin: 0.15rem 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 400;
+    }
+    .dates {
+      margin: 0;
+      flex: 0 0 auto;
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 400;
+      text-align: right;
+    }
+    .scope {
+      margin: 0.35rem 0 0.7rem;
+      font-family: Lora, Georgia, serif;
+      font-style: italic;
+      font-weight: 500;
+      color: var(--muted);
+      font-size: 1.02rem;
+      line-height: 1.5;
+    }
+    ul { margin: 0; padding: 0; list-style: none; }
+    li {
+      position: relative;
+      margin: 0 0 0.55rem;
+      padding-left: 1rem;
+    }
+    li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.62em;
+      width: 0.38rem;
+      height: 0.38rem;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .line {
+      margin: 0;
+      color: var(--ink);
+    }
+    .tools {
+      margin: 0.8rem 0 0;
+      color: var(--body);
+    }
+    footer {
+      padding-top: 0.4rem;
+      padding-bottom: 2.6rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .downloads { margin: 0.4rem 0 0; }
+    .downloads a { margin-right: 1.2rem; }
+    @media (max-width: 640px) {
+      .role-head { flex-direction: column; gap: 0.15rem; }
+      .dates { text-align: left; }
+      body { font-size: 16px; }
+    }
+    @media print {
+      body { background: white; }
+      .sheet { width: auto; margin: 0; box-shadow: none; }
+      nav, .downloads { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#letter">Skip to the letter</a>
+  <article class="sheet">
+    <header>
+      <p class="kicker">Senior Executive Assistant</p>
+      <h1>Susanne Hansen</h1>
+      <p class="place">Carrollton, Texas (Dallas–Fort Worth) · <a href="mailto:susanne.hansen.sr.ea@gmail.com">susanne.hansen.sr.ea@gmail.com</a></p>
+      <nav aria-label="Page">
+        <a href="#letter">Letter</a>
+        <a href="#experience">Experience</a>
+        <a href="#background">Background</a>
+      </nav>
+    </header>
+    <main>
+      <p class="summary">Senior executive assistant with seven years as strategic partner to senior executives in large multi-site organizations. Owns the operational layer around an executive: high-volume calendars, global travel planned around risk and security, meeting preparation, and action items tracked to completion. Builds the structure an executive office runs on: led an executive assistant team and rolled out the SOPs that put every new campus on one playbook. Runs a small team of AI agents in Claude, Grok, and ChatGPT for research, drafting, and testing, and checks their work before anything goes out. Clear and calm in ambiguity, from restructuring to new tools to competing deadlines, and comfortable keeping work moving without complete information. Passionate about autonomous transportation since about 2020; follows the space closely and drives an autonomous vehicle.</p>
+
+      <section id="letter" aria-labelledby="letter-heading">
+        <h2 id="letter-heading">Letter</h2>
+        <div class="letter">
+          <p class="salute">Dear Waabi Hiring Team,</p>
+          <p>I am writing to apply for the Executive Assistant position in Waabi’s Office of the CEO. Your posting describes work I love, at a company whose mission I genuinely care about.</p>
+          <p>I bring the balance this role requires: deep attention to detail at a high volume and pace, sound judgment when the information is incomplete, and genuine ease with change. I anticipate needs before they become issues, see commitments through, and am willing to push back when the executive’s time or the quality of the work calls for it.</p>
+          <p>When a restructuring at the Village Church moved strategic partnership out of my role, I chose to step away and spend this year learning to put AI to work. Because the tools change almost daily, I approached it as I would any operating problem: understand how the pieces fit, then run real work through them. Running my own team of AI agents put me on the other side of executive support. I decide what gets handed off, what comes back to me for a decision, and what a useful briefing looks like when my own time is the constraint. That has sharpened how I support an executive. I am still learning, and I am eager to keep looking for the places where AI can genuinely help a team.</p>
+          <p>I measure my work by how well it serves the people I support, not by whether anyone sees it, and discretion is second nature to me. On a team, I am lighthearted and easy to work with, focused on the details, and always looking for the next small improvement in how the work gets done.</p>
+          <p>Autonomous transportation is personal for me, and I am its self-appointed ambassador to anyone who will listen. I am an optimist about where it is headed, and putting my work behind a team that is bringing autonomous trucks and robotaxis to the road would mean a great deal to me.</p>
+          <p class="close">I would welcome the chance to talk about the experience, operational capacity, and genuine, flexible support I can bring to your team. Thank you for your consideration.</p>
+          <p class="close">Sincerely,</p>
+          <p class="sign">Susanne Hansen</p>
+        </div>
+      </section>
+
+      <section id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+
+        <div class="role">
+          <div class="role-head">
+            <h3>Senior Executive Assistant</h3>
+            <p class="dates">January 2024 – December 2025</p>
+          </div>
+          <p class="orgline">The Village Church, Flower Mound, Texas</p>
+          <p class="scope">Hybrid. Strategic partner to the Executive Directors of Operations and of Engagement and Communications in a large multi-site organization.</p>
+          <ul>
+            <li>Owned the operational execution of two competing high-volume executive calendars as one integrated plan, protecting prep time before high-visibility meetings.</li>
+            <li>Managed an executive inbox with a global audience: filtered and flagged, drafted replies and correspondence for signature, and surfaced only what needed the executive.</li>
+            <li>Prepared meeting pre-reads, agendas and talking points; converted notes into executive summaries and tracked action items, owners and deadlines through completion.</li>
+            <li>Proposed an AI adoption initiative after identifying a fluency and strategy gap; recommended technology and supported role-specific implementation as part of a three-person executive team.</li>
+            <li>After a restructuring, worked as a de facto consultant: designed AI training workshops and role-specific workflows that helped the Communications team through 45% departmental turnover in four months.</li>
+            <li>Supported budget preparation for phases 2–4 of a multi-year, multi-campus construction buildout; coordinated vendor, architect, and construction meetings and planned executive retreats.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-head">
+            <h3>Senior Executive Assistant</h3>
+            <p class="dates">January 2013 – May 2018</p>
+          </div>
+          <p class="orgline">Bent Tree Church, Carrollton, Texas</p>
+          <p class="scope">Large multi-site church. High-touch executive and personal support for a senior executive with a local and international speaking schedule.</p>
+          <ul>
+            <li>Led the executive assistant team and other initiatives and projects, taking work from research through training and implementation.</li>
+            <li>Owned end-to-end calendar, speaking engagements, events, and domestic and international travel logistics at high complexity.</li>
+            <li>Mitigated travel risk and security issues for the executive’s global travel and speaking engagements.</li>
+            <li>Served as gatekeeper and trusted liaison between the executive and staff, guests, donors, and public-relations contacts, screening requests and declining what did not belong on the calendar.</li>
+            <li>Helped plan a multi-campus expansion on the strategic team; led communications and SOP implementation to establish consistent operating practices across new campuses.</li>
+            <li>Supported a $22 million fundraiser and chapel construction through donor relations and event management.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-head">
+            <h3>AI Operator</h3>
+            <p class="dates">January 2026 – Present</p>
+          </div>
+          <p class="orgline">Independent Project</p>
+          <p class="scope">A self-directed year learning to put AI to work by running real projects with it, including a health-care product.</p>
+          <ul>
+            <li>Designs and operates a team of autonomous AI agents in Claude, ChatGPT, and Grok, each with a defined job and written ground rules, managed like staff; keeps learning newer tools, including Gemini.</li>
+            <li>Created one decision list for everything awaiting review or approval: each item says what it is, where to find it, and exactly what’s needed, so decisions don’t stall or get lost.</li>
+            <li>Built one shared knowledge base every AI agent works from, whichever company makes it, so the work never depends on a single provider; confidential information is kept out by rule.</li>
+            <li>Requires every AI draft to trace back to confirmed facts, and reviews it before anything is sent.</li>
+            <li>Stopped an AI content project when its quality fell short, rather than publish work below standard.</li>
+            <li>Took a support product for family caregivers from research through development with AI agents, which also handle getting it to market.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-head">
+            <h3>Executive Ghostwriter</h3>
+            <p class="dates">January 2022 – December 2024</p>
+          </div>
+          <p class="orgline">Independent Contractor</p>
+          <p class="scope">Fully remote. Strategic partner to clients including health-tech founders and ed-tech leaders.</p>
+          <ul>
+            <li>Shaped each principal’s positioning and narrative, then wrote the thought leadership, presentations, and book chapters published under their name, in strict confidence.</li>
+            <li>Worked as an extension of each principal, managing projects and client expectations in close collaboration with their product and technology teams.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-head">
+            <h3>Inflight Crew</h3>
+            <p class="dates">May 2018 – December 2022</p>
+          </div>
+          <p class="orgline">American Airlines</p>
+          <p class="scope">A long-held goal, pursued between executive roles.</p>
+          <ul>
+            <li>Delivered calm, professional service on domestic and international routes, in regular and disrupted travel.</li>
+            <li>Made safety-sensitive decisions on a constantly changing schedule, including when the operation broke down; knows from the inside where itineraries fail and how to plan around them.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="background" aria-labelledby="background-heading">
+        <h2 id="background-heading">Background</h2>
+        <p class="line">Operations Manager (3+ years, 3 direct reports) · Financial Analyst, Arthur Andersen / Accenture · Statistical Forecasting and Analysis, Mary Kay Cosmetics</p>
+        <p class="line" style="margin-top:1.1rem">Bachelor of Business Administration, Accounting · Southern Methodist University, Dallas, Texas</p>
+        <p class="tools">Claude, Grok, ChatGPT, Gemini, Microsoft Copilot · Microsoft Office (Word, Excel, PowerPoint, Outlook, Teams) · OneDrive, SharePoint · Google Workspace · Asana, Notion, Slack, Zoom</p>
+        <p class="tools">English and Danish</p>
+      </section>
+    </main>
+    <footer>
+      <p class="downloads">
+        <a href="Susanne-Hansen-Resume.pdf">Résumé</a>
+        <a href="Susanne-Hansen-Cover-Letter.pdf">Cover letter</a>
+      </p>
+    </footer>
+  </article>
+</body>
+</html>
